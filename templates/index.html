@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+</head>
+<body>
+    <h2>House Price Prediction</h2>
+    <form action="/predict" method="POST">
+        <label>Area:</label><input type="number" name="area" step="any" required><br>
+        <label>Bedrooms:</label><input type="number" name="bedrooms" required><br>
+        <label>Bathrooms:</label><input type="number" name="bathrooms" required><br>
+        <label>Stories:</label><input type="number" name="stories" required><br>
+        <label>Parking:</label><input type="number" name="parking" required><br>
+
+        <label>Main Road:</label><input type="text" name="mainroad" placeholder="yes/no" required><br>
+        <label>Guest Room:</label><input type="text" name="guestroom" placeholder="yes/no" required><br>
+        <label>Basement:</label><input type="text" name="basement" placeholder="yes/no" required><br>
+        <label>Hot Water Heating:</label><input type="text" name="hotwaterheating" placeholder="yes/no" required><br>
+        <label>Air Conditioning:</label><input type="text" name="airconditioning" placeholder="yes/no" required><br>
+        <label>Preferred Area:</label><input type="text" name="prefarea" placeholder="yes/no" required><br>
+        <label>Furnishing Status:</label><input type="text" name="furnishingstatus" placeholder="yes/no" required><br>
+
+        <label>Select Model:</label>
+        <select name="model" required>
+            <option value="linear">Linear Regression</option>
+            <option value="random_forest">Random Forest</option>
+            <option value="gradient_boosting">Gradient Boosting</option>
+            <option value="xgboost">Xgboost</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
