@@ -1,4 +1,4 @@
-# 🏠 House Price Prediction Using Machine Learning
+# 🏠 House Price Prediction Using Machine Learning & Flask
 
 This project uses machine learning regression models to predict the selling price of a house based on features such as area, number of bedrooms, bathrooms, location advantages, and amenities.
 
