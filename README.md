@@ -1,13 +1,13 @@
 # 🏠 House Price Prediction Using Machine Learning
 
-This project predicts the selling price of a house based on features like area, number of bedrooms, bathrooms, location advantages, and amenities using machine learning regression models.
+This project uses machine learning regression models to predict the selling price of a house based on features such as area, number of bedrooms, bathrooms, location advantages, and amenities.
 
 ## 🚀 Overview
 
 This ML project applies supervised learning techniques to build a regression model that can estimate house prices. It includes:
 
 - Data preprocessing (including handling categorical variables)
-- Model training using algorithms like Random Forest, Linear Regression, etc.
+- Model training using algorithms like Random Forest, Linear Regression, XGBoost, GradientBoost, etc.
 - Feature scaling
 - Model evaluation
 - Deployment-ready structure (with optional web interface)
